@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ControlCalculateActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/ivMatrixId"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/the_matrix"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:layout_gravity="left"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvIdDisplayId"
+            android:textSize="20dp"
+            android:textColor="#FFFF00"
+            android:background="#0000FF"/>
+
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/etControlDigitId"
+            android:maxLength="1"
+            android:maxWidth="3dp"
+            android:textSize="15dp"
+            android:textColor="#FFFF00"
+            android:background="#0000FF"
+            android:textDirection="ltr"
+            />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/ivBtnId"
+            android:src="@mipmap/m_id_btn"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDiscoverId"
+        android:text="Discover" android:textSize="20dp"
+        android:layout_gravity="center" android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="#501C4A"/>
+
+</LinearLayout>
